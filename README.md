@@ -36,7 +36,7 @@ This portfolio displays various projects that I've worked on, including web appl
 ## Usage
 
 You can view the live version of the portfolio at the following link:  
-[Your Live Portfolio Link](https://spontaneous-pithivier-ac4258.netlify.app/portfolio)  
+[Portfolio](https://spontaneous-pithivier-ac4258.netlify.app)  
 
 ## License
 
