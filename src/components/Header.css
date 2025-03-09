@@ -1,0 +1,117 @@
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+    width: 100vw; /* Ensure full viewport width */
+    max-width: 100%; /* Prevent extra width */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.developer-name {
+  font-size: 1.8rem;
+  transition: font-size 0.3s ease;
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 0 10px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+/* Styles for the menu button */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 20; /* Keep the toggle button above the navigation */
+  position: absolute;
+  right: 10px; /* Position the toggle button to the right */
+}
+
+@media (max-width: 768px) {
+  /* On small screens, show the menu toggle */
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 50px; /* Adjust to position the nav below the header */
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0; /* Add some padding to ensure navigation links are spaced out */
+    z-index: 10; /* Keep it below the header */
+  }
+
+  .navigation.active {
+    transform: translateX(0);
+  }
+
+  .navigation a {
+    padding: 10px;
+  }
+
+  .navigation li {
+    margin: 0;
+  }
+
+  /* Increase the header height to accommodate the navigation */
+  .header {
+    height: auto; /* Allow the header height to be flexible */
+  }
+
+  .header-content {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px; /* Add extra padding to prevent overlap with toggle */
+  }
+}

@@ -1,0 +1,78 @@
+/* src/pages/Portfolio.css */
+
+.portfolio-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .portfolio-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .portfolio-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .portfolio-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .project-info p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .project-link:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    
+  }
+  
